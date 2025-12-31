@@ -3,15 +3,15 @@ name: OZIP Decrypter by TechyMinati...
 on:
 #  release:
 #    types: [published]
-#  push:
-#    branches:
-#      - master
+  push:
+    branches:
+      - master
 #    paths:
 #      - '.config'
 #  schedule:
 #    - cron: 0 8 * * 5
-  watch:
-    types: [started]
+#watch:
+ #   types: [started]
 
 env:
   FIRMWARE_LINK: https://assorted.downloads.oppo.com/firmware/CPH1917/CPH1917EX_11_OTA_0080_all_GWbhnkTy2RvI.ozip #edit link here....
@@ -21,7 +21,7 @@ env:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
 
     steps:
        - name: Checkout
